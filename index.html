@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chenchoy | 1</title>
+<link rel="icon" type="image/jpg" href="img/logo-BLT.jpg">
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,200&display=swap');
+	* {
+		font-family: 'Kanit', sans-serif;
+		color: #ffffff;
+	}
+
+	textarea {
+		margin: 10px;
+		margin-top: 40px;
+		background-color: #1f1f1f;
+		padding: 10px;
+		color: #ffe7ba;
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 52px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	body {
+		background-color: #121212;
+
+</style>
+
+<body>
+	<script>
+    	var thaiNumber = ["๐", "๑", "๒", "๓", "๔", "๕", "๖", "๗", "๘", "๙"];
+        
+	function convertNumberToThai() {
+        		var originalText = document.getElementById("original").value;
+            		var i = 0;
+            		thaiNumber.forEach(element => {
+            			originalText = originalText.replace(new RegExp(i, 'g'), element);
+               		i++;
+	});
+	document.getElementById("converted").value = originalText;
+	}
+	</script>
+
+  <center>
+      <h1>เปลี่ยนเลขอารบิกเป็นเลขไทยทันที (v0.0.1)</h1>
+      <h4>ไม่มีอะไรมากหรอก เผื่อทำรายงานหรือทำอะไรแล้วจำเป็นต้องใช้เลขไทย ละขี้เกียจเหมือนเรา ก็มาใช้โปรแกรมเปลี่ยนเลขอารบิกเป็นเลขไทยเลยครัชช</h4>
+      <hr />
+      <textarea id="original" oninput="convertNumberToThai()" rows="20" cols="70"></textarea>
+      <textarea id="converted" disabled rows="20" cols="70"></textarea>
+  </center>
+
+
+</body>
+</html>
+
+
