@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,200&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
+}
+
+textarea {
+    margin: 10px;
+    /* margin-top: 40px; */
+    background-color: #1f1f1f;
+    padding: 10px;
+    color: #ffe7ba;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+body {
+    background-color: #121212;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
